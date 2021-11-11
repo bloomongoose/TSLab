@@ -16,6 +16,4 @@ var products = [
     { name: "Chalupa", price: 4.99 }
 ];
 ;
-var inventory = [
-    { Product: Product, : .name, "motor": , Product: Product, : .price, 10.00: quantity, 10:  },
-];
+

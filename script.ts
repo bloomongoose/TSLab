@@ -11,7 +11,22 @@ let mountains: Mountain[] = [
     { name: "Denali", height: 20310},
 ];
 
-//function findNameOfTallestMountain()
+function findNameOfTallestMountain(mountainList:Mountain[]):string{
+    let result:Mountain = {name:"",height:0};
+
+    mountainList.forEach(function (M:Mountain){
+        if(M.height > result.height){
+            result = M
+        }
+    });
+
+    return result.name;
+}
+
+let TallestName: string = findNameOfTallestMountain(mountains)
+console.log(TallestName);
+
+
 
 interface Product{
     name: string;
@@ -27,7 +42,17 @@ let products: Product[] = [
     { name: "Chalupa", price: 4.99}
 ];
 
-//functions
+function calcAverageProductPrice(ProductList:Product[]):number{
+    let result = 0;
+    ProductList.forEach(function(P:Product){
+        result += P.price;
+    });
+
+    return result / ProductList.length;
+}
+
+let AvgPrice: number = calcAverageProductPrice(products);
+console.log(AvgPrice);
 
 interface InventoryItem{
     Product: {
