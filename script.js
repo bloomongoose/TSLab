@@ -6,3 +6,16 @@ var mountains = [
     { name: "Everest", height: 29029 },
     { name: "Denali", height: 20310 },
 ];
+;
+var products = [
+    { name: "Taco", price: 3.99 },
+    { name: "Burrito", price: 4.99 },
+    { name: "Beans n Rice", price: 1.99 },
+    { name: "Quesadilla", price: 3.99 },
+    { name: "Chips n Cheese", price: 1.99 },
+    { name: "Chalupa", price: 4.99 }
+];
+;
+var inventory = [
+    { Product: Product, : .name, "motor": , Product: Product, : .price, 10.00: quantity, 10:  },
+];
